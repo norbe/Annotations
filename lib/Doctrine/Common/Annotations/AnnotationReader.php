@@ -167,9 +167,9 @@ class AnnotationReader implements Reader
             throw AnnotationException::optimizerPlusLoadComments();
         }
 
-        if (extension_loaded('Zend OPcache') && ini_get('opcache.load_comments') == 0) {
-            throw AnnotationException::optimizerPlusLoadComments();
-        }
+//        if (extension_loaded('Zend OPcache') && ini_get('opcache.load_comments') == 0) {
+//            throw AnnotationException::optimizerPlusLoadComments();
+//        }
 
         AnnotationRegistry::registerFile(__DIR__ . '/Annotation/IgnoreAnnotation.php');
 
